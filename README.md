@@ -1,43 +1,23 @@
-<<<<<<< HEAD
+# 🚚 Automated Logistics Deployment Pipeline
+
 [![CI/CD Pipeline](https://github.com/shaikmuskan27/automated-logistics-deployment/actions/workflows/deploy.yml/badge.svg)](https://github.com/shaikmuskan27/automated-logistics-deployment/actions/workflows/deploy.yml)
-=======
-<<<<<<< HEAD
-[![CI/CD Pipeline](https://github.com/shaikmuskan27/automated-logistics-deployment/actions/workflows/deploy.yml/badge.svg)](https://github.com/shaikmuskan27/automated-logistics-deployment/actions/workflows/deploy.yml
 
-=======
-[![CI/CD Pipeline](https://github.com/shaikmuskan27/automated-logistics-deployment/actions/workflows/deploy.yml/badge.svg)](https://github.com/shaikmuskan27/automated-logistics-deployment/actions/workflows/deploy.yml)
->>>>>>> 2195443 (Updated README with professional documentation)
->>>>>>> temp-fix
-🚀 Automated Logistics Deployment Pipeline
-Built for: High-Availability System Monitoring
+## 🌟 Project Overview
+This project demonstrates a high-availability CI/CD pipeline designed for a containerized logistics application. It focuses on **Infrastructure as Code (IaC)**, **DevSecOps**, and **Automated Health Monitoring**.
 
-📌 Project Overview
-This project simulates a core logistics application environment using a CI/CD Pipeline. It automates the entire lifecycle of a service—from code commit to production-ready containerization and health validation.
+### 🛠 Key Features
+* **Containerization:** Packaged using Docker for 100% environment consistency.
+* **DevSecOps Gate:** Integrated `Trivy` scanning to block any build with `CRITICAL` or `HIGH` vulnerabilities.
+* **Resilient Health Checks:** Automated connectivity testing using `curl` with built-in retries to ensure system stability post-deployment.
+* **Automated Workflow:** GitHub Actions orchestrates the entire lifecycle from commit to verification.
 
-🛠 Tech Stack
-OS: Linux (WSL2/Ubuntu)
+## 🛡️ Security Audit Results
+Current status: **0 Vulnerabilities Detected.**
 
-Runtime: Python 3.9 (Flask)
+| Target | Type | Vulnerabilities | Status |
+| :--- | :--- | :--- | :--- |
+| logistics-app (Debian) | OS | 0 | ✅ SECURE |
+| Python Packages (Flask) | Language | 0 | ✅ SECURE |
 
-Infrastructure: Docker
-
-Automation: GitHub Actions
-
-Testing: Bash & Curl Health-Check Scripts
-
-🌟 Key Engineering Features
-Automated CI/CD: Every push triggers a full build-test-deploy cycle using GitHub Actions.
-
-Infrastructure-as-Code: Used Dockerfiles to ensure environment parity between development and production.
-
-Self-Healing Logic: Implemented post-deployment Automated Health Checks that verify system connectivity and response integrity.
-
-Operational Troubleshooting: Managed and resolved Linux-based environment conflicts and Git identity configurations.
-
-🚦 How it Works
-Build: Docker creates a lightweight image of the Flask app.
-
-Test: The pipeline launches a temporary container.
-
-
-Verify: A Bash script uses curl with retry logic to ensure the "System is Online."
+---
+*Built for the Systems Development Engineer (SysDE) Career Path.*
